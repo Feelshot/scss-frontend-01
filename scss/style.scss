@@ -2,13 +2,114 @@
 
 // variables
 $dark-cyan:  hsl(158, 36%, 37%);
+$very-dark-cyan:  hsl(158, 37%, 20%);
 $cream: hsl(30, 38%, 92%);
 $Very-dark-blue: hsl(212, 21%, 14%);
 $Dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
+$fraunces: 'Fraunces', serif;
+$montse: 'Montserrat', sans-serif; 
 
 // ajustes generales
 * {margin: 0; padding: 0;}
 body {
-    font-size: 14px;   
+    font-size: 14px;
+  
+}
+//desktop
+body{
+    background-color: $cream;
+    main {
+        section {
+            background-color: $white;
+            margin: 150px auto 0 auto;
+            width: 600px;
+            height: 450px;
+            border-radius: 20px;
+            display: flex;
+            .imagenes-perfume {
+                .img-mobile {
+                    display: none;
+                }
+                .img-desktop {
+                    display: flex;
+                    width: auto;
+                    height: 450px;
+                    border-radius: 20px 0 0 20px;
+                }
+            }
+            .container-master-text{
+                margin-left: 30px;
+                margin-top: 30px;
+                .title-perfume{
+                    font-family: $montse;
+                    color: $Dark-grayish-blue;
+                    letter-spacing: 10px;
+                }
+                .name-of-perfum{
+                    margin-top: 20px;
+                    font-family: $fraunces;
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: 100;
+                }
+                .paragraph {
+                    margin-top: 30px;
+                    font-family: $montse;
+                    color: $Dark-grayish-blue;
+                    width: 240px;
+                }
+                .prices {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 25px;
+                    .promo{
+                        font-family: $fraunces;
+                        color: $dark-cyan;
+                        font-size: 28px;
+                        font-weight: 100;
+                    }
+                    .price-labeled{
+                        font-family: $montse;
+                        text-decoration: line-through;
+                        color: $Dark-grayish-blue;
+                        margin-left: 20px;
+                    }
+                }
+                .button-container {
+                    margin-top: 25px;
+                    button {
+                        background-color: $dark-cyan;
+                        color: $white;
+                        width: 250px;
+                        height: 50px;
+                        border-radius: 10px;
+                        border-width: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $montse;
+                        img {
+                            margin-right: 10px;
+                        }
+                    }
+                    button:hover {
+                        background-color: $very-dark-cyan;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+// mobile 
+@media (min-width: 100px) and (max-width: 650px) { 
+    .img-desktop {
+        display: none;
+    }
+    .img-mobile {
+        display: flex;
+    }
 }

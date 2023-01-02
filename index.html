@@ -2,39 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/bf3c502003.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
     <title>Frontend Scss 01 | Feelshot</title>
 </head>
 <body>
     <header></header>
     <main>
-
-
-        <p>PERFUME</p>   
-
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        
-        <p>
-            A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-        Perfumer-Creator for the House of CHANEL.
-        </p>
-        <p>$149.99</p> <p>$169.99</p>
-      
-        
-        <button><img src="img/icon-cart.svg" alt="cart">Add to Cart</button>
-      
-        
-
-
-
         <section>
-            <div>
+            <div class="imagenes-perfume">
                 <div>
-                    <img src="img/image-product-desktop.jpg" alt="image product perfum">
-                    <img src="img/image-product-mobile.jpg" alt="image product perfum">
+                    <img src="img/image-product-desktop.jpg" alt="image product perfum" class="img-desktop">
+                    <img src="img/image-product-mobile.jpg" alt="image product perfum" class="img-mobile">
+                </div>               
+            </div>
+            <div class="container-master-text">
+                <div class="title-perfume">
+                    <p>PERFUME</p>   
                 </div>
-                <div></div>
+                <div class="name-of-perfum">
+                    <h1>Gabrielle Essence Eau De Parfum</h1>
+                </div>
+                <div class="paragraph">
+                    <p>
+                        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.
+                    </p>
+                </div>
+                <div class="prices">
+                    <p class="promo">$149.99</p> <p class="price-labeled">$169.99</p>
+                </div>
+                <div class="button-container">
+                    <button><img src="img/icon-cart.svg" alt="cart">Add to Cart</button>
+                </div>
             </div>
         </section>
     </main>
